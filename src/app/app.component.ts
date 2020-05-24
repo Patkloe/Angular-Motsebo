@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Patrick Motsebo Angular Tutorial';
+  cheminImage = 'assets/img/angular.jpg';
 }

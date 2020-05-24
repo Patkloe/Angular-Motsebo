@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
+import { CoursesComponent } from './courses.component';
+import { CourseComponent } from './course/course.component';
+import { Courseservice } from './courses.service';
 import appRoutes from './routerConfig';
 
 @NgModule({
@@ -13,12 +16,16 @@ import appRoutes from './routerConfig';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    MenuComponent
+    MenuComponent,
+    CoursesComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+     Courseservice
+],
   bootstrap: [AppComponent]
 })
 export class AppModule {
